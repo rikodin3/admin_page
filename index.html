@@ -4,53 +4,94 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
     <div class="dashboard-container">
         <aside class="sidebar">
-            <h2>Dashboard</h2>
+            <h2>
+                <span class="material-icons">dashboard</span>
+                <span>Dashboard</span>
+            </h2>
             <nav>
-                <ul>
-                    <li>Home</li>
-                    <li>Profile</li>
-                    <li>Messages</li>
-                    <li>History</li>
-                    <li>Tasks</li>
-                    <li>Communities</li>
-                    <li>Settings</li>
-                    <li>Support</li>
-                    <li>Privacy</li>
+                <ul class="sidebar-menu">
+                    <li>
+                        <span class="material-icons">home</span>
+                        <span class="label">Home</span>
+                    </li>
+                    <li>
+                        <span class="material-icons">assignment</span>
+                        <span class="label">To-do things</span>
+                    </li>
+                    <li>
+                        <span class="material-icons">photo_library</span>
+                        <span class="label">Our Pictures</span>
+                    </li>
+                    <li>
+                        <span class="material-icons">history_edu</span>
+                        <span class="label">Poem</span>
+                    </li>
+                    <li>
+                        <span class="material-icons">history_edu</span>
+                        <span class="label">Nia & Ansh</span>
+                    </li>
                 </ul>
             </nav>
         </aside>
-        <header class="topbar">
-            <div class="search-bar"></div>
-            <div class="user-info">
-                <span class="username">Yash Roshan</span>
-                <img src="C:/Users/yashr/Downloads/account-edit.svg" alt="profile-picture" class="profile-pic">
+        <div class="upper-content">
+            <header class="topbar">
+                <div class="search-bar">
+                    <span class="material-icons">search</span>
+                    <input type="text" placeholder="Search..." />
+                </div>
+                <div class="user-info">
+                    <span class="username">Bhavana and Yash</span>
+                </div>
+            </header>
+             <div class="greeting-bar">
+                <h1>Hi Bhavana</h1>
+                <div class="control-buttons">
+                    <button>New</button>
+                    <button>Upload</button>
+                    <button>Share</button>
+                </div>
             </div>
-        </header>
+        </div>
         <main class="main-content">
             <section class="projects-section">
-                <h3>Your Projects</h3>
+                <h3>Things You Should Do</h3>
                 <div class="projects-grid">
-                <!-- Cards go here -->
+                    <div class="card">
+                        <h3>Kiss Yash</h3>
+                        <p>Your first project is to kiss Yash until he begs you to stop(dont listen to him he is an idiot)</p>
+                    </div>
+                    <div class="card">
+                        <h3>Go on a shopping date with Yash</h3>
+                        <p>Yash realllly wants to go on a shopping date with you and maybe kiss in the changing room...</p>
+                    </div>
+                    <div class="card">
+                        <h3>Go on library dates with Yash</h3>
+                        <p>Yash wants to study you in the silence of the library...</p>
+                    </div>
+                    <div class="card">
+                        <h3>Hug Yash</h3>
+                        <p>Hug yash like realllly tight and dont let him go</p>
+                    </div>
                 </div>
             </section>
 
             <aside class="announcements">
-                <h4>Announcements</h4>
+                <h4></h4>
                 <!-- Announcement cards go here -->
             </aside>
 
             <aside class="trending">
-                <h4>Trending</h4>
+                <h4></h4>
                 <!-- Trending users go here -->
             </aside>
-            </main>
-
-  </div>
+        </main>
+    </div>
 </body>
 </html>
     </div>
