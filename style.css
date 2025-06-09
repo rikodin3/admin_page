@@ -165,37 +165,56 @@ html,body{
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+
+/* Apply to full page */
+body {
+  margin: 0;
+  font-family: 'Courier New', monospace;
+  background: linear-gradient(to right, #69d2e7, #b1f4cf, #f7c2cc);
+  color: #222;
+}
+
+/* Sidebar */
 .sidebar {
-  background: linear-gradient(to bottom, #45c9d2, #66a6ff);
-  color: #003049;
+  background: linear-gradient(to bottom, #69d2e7, #38b2ac);
+  color: white;
 }
 
-.topbar,.greeting-bar,.main-content   {
-  background: linear-gradient(to right, #a8edea, #fed6e3);
-  color: #003049;
+/* Topbar */
+.topbar {
+  background: linear-gradient(to right, #69d2e7, #b1f4cf);
+  color: #111;
 }
 
+/* Cards */
 .card {
-  background: linear-gradient(to bottom right, #c1fcd3, #b5ecf5);
-  color: #003049;
+  background: linear-gradient(to bottom right, #b1f4cf, #a8e6f0);
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
   border-radius: 12px;
-  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
   padding: 16px;
+  margin: 12px;
+  transition: transform 0.2s ease;
 }
 
+.card:hover {
+  transform: scale(1.02);
+}
+
+/* Buttons */
 button {
-  background-color: #00b4d8;
+  background: #ff5e78;
   color: white;
   border: none;
-  border-radius: 8px;
+  border-radius: 20px;
   padding: 8px 16px;
   cursor: pointer;
+  font-weight: bold;
+  transition: background 0.2s ease;
 }
 
 button:hover {
-  background-color: #0096c7;
+  background: #ff2e5d;
 }
-
 
 .card:hover {
   transform: scale(1.02);
