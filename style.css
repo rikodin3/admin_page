@@ -172,22 +172,16 @@ html,body{
 /* Apply to full page */
 body {
   margin: 0;
-  font-family: 'Courier New', monospace;
   background: linear-gradient(to right, #69d2e7, #b1f4cf, #f7c2cc);
   color: #222;
 }
 
 /* Sidebar */
 .sidebar {
-  background: linear-gradient(to bottom, #69d2e7, #38b2ac);
-  color: white;
+  background: linear-gradient(to bottom, #6ad4dc, #4ba7ce);
+  color: #2d2d2d;
 }
 
-/* Topbar */
-.topbar {
-  background: linear-gradient(to right, #69d2e7, #b1f4cf);
-  color: #111;
-}
 
 /* Cards */
 .card {
