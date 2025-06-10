@@ -52,7 +52,7 @@
              <div class="greeting-bar">
                 <h1>Hi Bhavana</h1>
                 <div class="control-buttons">
-                    <button>New</button>
+                    <button class="new-button" onclick="toggleModal()">New</button>
                     <button>Upload</button>
                     <button>Share</button>
                 </div>
@@ -64,7 +64,7 @@
                 <div class="projects-grid">
                     <div class="card">
                         <h3>Kiss Yash</h3>
-                        <p>Your first project is to kiss Yash until he begs you to stop(dont listen to him he is an idiot)</p>
+                        <p>Your should kiss Yash until he begs you to stop(dont listen to him he is an idiot)</p>
                     </div>
                     <div class="card">
                         <h3>Go on a shopping date with Yash</h3>
@@ -74,25 +74,22 @@
                         <h3>Go on library dates with Yash</h3>
                         <p>Yash wants to study you in the silence of the library...</p>
                     </div>
-                    <div class="card">
-                        <h3>Hug Yash</h3>
-                        <p>Hug yash like realllly tight and dont let him go</p>
-                    </div>
                 </div>
             </section>
-
-            <aside class="announcements">
-                <h4></h4>
-                <!-- Announcement cards go here -->
-            </aside>
-
-            <aside class="trending">
-                <h4></h4>
-                <!-- Trending users go here -->
-            </aside>
         </main>
     </div>
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button" onclick="toggleModal()">&times;</span>
+            <h2>Wannna do something else huh?</h2>
+            <input type="text" id="taskTitle" placeholder="What ya wanna do?"/>
+            <textarea id="taskContent" placeholder="more details pleassse..."></textarea>
+            <button onclick="addTask()">Add</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
+
 </html>
     </div>
 </body>
