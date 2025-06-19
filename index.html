@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style.css"/>
     <script src="https://www.gstatic.com/firebasejs/10.12.1/firebase-app-compat.js"></script>
     <script src="https://www.gstatic.com/firebasejs/10.12.1/firebase-firestore-compat.js"></script>
+    <script src="firebaseConfig.js"></script>
     <script defer src="script.js"></script>
 </head>
 <body>
@@ -64,35 +65,22 @@
         <main class="main-content">
             <section class="projects-section">
                 <h3>Things You Should Do</h3>
-                <div class="projects-grid">
-                    <div class="card">
-                        <h3>Kiss Yash</h3>
-                        <p>Your should kiss Yash until he begs you to stop(dont listen to him he is an idiot)</p>
-                    </div>
-                    <div class="card">
-                        <h3>Go on a shopping date with Yash</h3>
-                        <p>Yash realllly wants to go on a shopping date with you and maybe kiss in the changing room...</p>
-                    </div>
-                    <div class="card">
-                        <h3>Go on library dates with Yash</h3>
-                        <p>Yash wants to study you in the silence of the library...</p>
-                    </div>
-                </div>
+                <div class="projects-grid"></div>
             </section>
         </main>
     </div>
     <div id="modal" class="modal">
         <div class="modal-content">
             <span class="close-button" onclick="toggleModal()">&times;</span>
-            <h2>Wannna do something else huh?</h2>
-            <input type="text" id="taskTitle" placeholder="What ya wanna do?"/>
+            <h2 id="modalHeading">Wannna do something else huh?</h2>
+            <input type="text" id="taskTitle" placeholder="What you wanna do?"/>
             <textarea id="taskContent" placeholder="more details pleassse..."></textarea>
-            <button onclick="addTask()">Add</button>
+            <button id='submitButton' onclick="handleSubmit()">Add</button>
         </div>
     </div>
-</body>
-
-</html>
-    </div>
+    <ul id="context-menu" class="context-menu">
+        <li onclick="startEdit()">Edit</li>
+        <li onclick="deleteCard()">Delete</li>
+    </ul>
 </body>
 </html>
