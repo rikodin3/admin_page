@@ -1,0 +1,73 @@
+body{
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    padding: 0 2rem 2rem 2rem;
+    background-image: url('images/love.jpg');
+    background-repeat: no-repeat;      
+    background-position: center top;      
+    background-size: cover;               
+  
+}
+
+.poem{
+    max-width: 600px;
+    font-size: 1rem;
+    max-height: 80vh;
+    text-align: center;
+    overflow-y: auto;
+    scrollbar-width: none;     
+    -ms-overflow-style: none;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.fade-out{
+    opacity: 0;
+}
+
+.poem-container h1{
+    text-align: center;
+}
+
+.poem-wrapper{
+    position:relative;
+    max-height: 80vh;
+    overflow:hidden;
+    border-radius: 10px;
+}
+
+.poem-wrapper::before,
+.poem-wrapper::after{
+    content:"";
+    position: absolute;
+    left:0;
+    width:100%;
+    height:30px;
+    z-index:2;
+    pointer-events: none;
+}
+
+.poem-wrapper::before{
+    top: 0;
+    background: linear-gradient(to bottom,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0) 30%,
+    rgba(0, 0, 0, 0) 100%
+  );
+    backdrop-filter: blur(2px);
+}
+
+.poem-wrapper::after{
+    bottom: 0;
+    background: linear-gradient(to bottom,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0) 30%,
+    rgba(0, 0, 0, 0) 100%
+  );
+    backdrop-filter: blur(2px);
+}
+
