@@ -17,7 +17,7 @@ body{
 .poem{
     max-width: 600px;
     font-size: 1rem;
-    max-height: 80vh;
+    height: 80vh;
     text-align: center;
     overflow-y: auto;
     scrollbar-width: none;     
@@ -70,4 +70,3 @@ body{
   );
     backdrop-filter: blur(2px);
 }
-

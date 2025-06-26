@@ -6,6 +6,10 @@ poems = [
     {
         heading:"Ecstatic agony",
         poem:`<br><br>Lost in an endless, perpetual void<br>Eyes so surreal, all control destroyed<br>Gravitating the contours of my soul<br>Till it's involuntarily engulfed, as a whole<br><br>A second, a minute, a day, a month<br>But a lifetime when defined by love<br>The distance to unite, so visibly blunt<br>Measures to infinity and above<br><br>A need so strong, words fail to explain<br>Quenched by a walk down the memory lane<br>Or by a dream built by fusing together<br>Each other's longing to witness forever<br><br>How every drop of tear lining her face<br>Accompanied by the dearth of his grace<br>Tattooed a tale to be decoded by his soul<br>An art so intricate, only he could control<br><br>What our bodies can't, our hearts can<br>Teleporting thoughts in a startling span<br>The pillow, now you, embracing every curve<br>Making my buried poignant self, swerve<br><br>❤️`
+    },
+    {
+        heading:"Baby will tell later",
+        poem:"<br><br>We met a moon ago, not more,<br>Yet hearts recall a time before<br>Before this life, before this skin,<br>When love first lit its fire within.<br><br>Your eyes, like stars in twilight’s sweep,<br>Hold depths that stir what lies too deep;<br>A compass in a storm-wrung sea,<br>That always pulls the tide to me.<br><br>They say it's young—this thing we share,<br>But time has never measured care.<br>In thirty days, we’ve danced through years,<br>Spoke without words, laughed through our fears.<br><br>You call me beautiful—I blush,<br>But it’s your gaze that makes me hush.<br>That look, that warmth, that tender grace,<br>That sees my soul and not my face.<br><br>And you, so handsome, soft and kind,<br>A rare, sweet blend of heart and mind.<br>Your voice, a calm across the miles,<br>That fills the space with silent smiles.<br><br>Now distance holds us—cruel, precise,<br>An ocean cut from starlit ice.<br>But still I feel you near, each day,<br>As if your breath were just a stray<br>Whisper down the telephone,<br>Turning empty rooms to home.<br><br>❤️"
     }
 ]
 
