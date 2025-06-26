@@ -1,6 +1,7 @@
 html,body{
     margin:0;
     height: 100vh;
+    overflow: hidden;
 }
 
 body {
@@ -113,7 +114,6 @@ a {
 .projects-section{
     padding:1rem;
     min-height: 0;
-    overflow-y: auto;
 }
 
 .sidebar-menu {
@@ -143,6 +143,10 @@ a {
     grid-auto-rows: 1fr;
     gap:1.5rem;
     box-sizing: border-box;
+    max-height: 70vh;
+    overflow: auto;
+    scrollbar-width: none;     
+    -ms-overflow-style: none;
 }
 
 .card {
@@ -155,6 +159,7 @@ a {
   border-left: 8px solid #e75480;
   background: linear-gradient(145deg, #c1e8ff, #d1ffe8);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  height: 220px;
 }
 
 .topbar,.greeting-bar,.main-content{
