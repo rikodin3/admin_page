@@ -9,70 +9,79 @@
     <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
     <script src="https://www.gstatic.com/firebasejs/10.12.1/firebase-app-compat.js"></script>
     <script src="https://www.gstatic.com/firebasejs/10.12.1/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.12.1/firebase-auth-compat.js"></script>
     <script src="firebaseConfig.js"></script>
     <script defer src="script.js"></script>
 </head>
 <body>
-    <div class="dashboard-container">
-        <aside class="sidebar">
-            <h2>
-                <span class="material-icons">dashboard</span>
-                <span>Dashboard</span>
-            </h2>
-            <nav>
-                <ul class="sidebar-menu">
-                    <li>
-                        <span class="material-icons">home</span>
-                        <span class="label">Home</span>
-                    </li>
-                    <li>
-                        <span class="material-icons">assignment</span>
-                        <span class="label">To-do things</span>
-                    </li>
-                    <li>
-                        <span class="material-icons">photo_library</span>
-                        <span class="label">Our Pictures</span>
-                    </li>
-                
-                        <a href="poems.html">
+    <div class="auth"id="auth-container">
+        <h1>Login to continue</h1>
+        <input type="email" id="email" placeholder="Email id">
+        <input type="password" id="password" placeholder="password">
+        <button onclick="login()">Login</button>
+        <p id="auth-error" style="color: red;"></p>
+    </div>
+    <div id="main-site" style="display: none;">
+        <div class="dashboard-container">
+            <aside class="sidebar">
+                <h2>
+                    <span class="material-icons">dashboard</span>
+                    <span>Dashboard</span>
+                </h2>
+                <nav>
+                    <ul class="sidebar-menu">
+                        <li>
+                            <span class="material-icons">home</span>
+                            <span class="label">Home</span>
+                        </li>
+                        <li>
+                            <span class="material-icons">assignment</span>
+                            <span class="label">To-do things</span>
+                        </li>
+                        <a href="pics.html">
                             <li>
-                                <span class="material-icons">history_edu</span>
-                                <span class="label">Poem</span>
+                                <span class="material-icons">photo_library</span>
+                                <span class="label">Our Pictures</span>
                             </li>
                         </a>
-                    
-                    <li>
-                        <span class="material-icons">history_edu</span>
-                        <span class="label">Nia & Ansh</span>
-                    </li>
-                </ul>
-            </nav>
-        </aside>
-        <div class="upper-content">
-            <header class="topbar">
-                <div class="search-bar">
-                    <span class="material-icons">search</span>
-                    <input type="text" placeholder="Search..." />
-                </div>
-                <div class="user-info">
-                    <span class="username">Bhavana ❤️ Yash</span>
-                </div>
-            </header>
-             <div class="greeting-bar">
-                <h1>Hi Bhavana</h1>
-                <div class="control-buttons">
-                    <button class="new-button" onclick="toggleModal()">New</button>
-                    <button>Upload</button>
-                    <button>Share</button>
+                            <a href="poems.html">
+                                <li>
+                                    <span class="material-icons">history_edu</span>
+                                    <span class="label">Poem</span>
+                                </li>
+                            </a>
+                        <li>
+                            <span class="material-icons">history_edu</span>
+                            <span class="label">Nia & Ansh</span>
+                        </li>
+                    </ul>
+                </nav>
+            </aside>
+            <div class="upper-content">
+                <header class="topbar">
+                    <div class="search-bar">
+                        <span class="material-icons">search</span>
+                        <input type="text" placeholder="Search..." />
+                    </div>
+                    <div class="user-info">
+                        <span class="username">Bhavana ❤️ Yash</span>
+                    </div>
+                </header>
+                <div class="greeting-bar">
+                    <h1>Hi Bhavana</h1>
+                    <div class="control-buttons">
+                        <button class="new-button" onclick="toggleModal()">New</button>
+                        <button onclick="logout()">Logout</button>
+                    </div>
                 </div>
             </div>
+            <main class="main-content">
+                <section class="projects-section">
+                    <h3>Things You Should Do</h3>
+                    <div class="projects-grid"></div>
+                </section>
+            </main>
         </div>
-        <main class="main-content">
-            <section class="projects-section">
-                <h3>Things You Should Do</h3>
-                <div class="projects-grid"></div>
-            </section>
-        </main>
     </div>
     <div id="modal" class="modal">
         <div class="modal-content">

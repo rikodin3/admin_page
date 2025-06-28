@@ -1,10 +1,35 @@
 firebase.initializeApp(firebaseConfig);  //creates an app instance based on the firebaseConfig object
 const db = firebase.firestore();  //Initializes and returns the Firestore database instance for your Firebase app
 
+const auth = firebase.auth(); //Initialize firebase authentication
 let isEditing = false;
 let editingCardId = null;  //setting the editing card
 let selectedCard = null; //setting the selected card
 
+async function login(){
+    //Get email and password from inour fields
+    const email = document.getElementById("email").value;
+    const pass = document.getElementById("password").value;
+
+    //Use Firebase Auth to to sign in
+    try{
+        //wait for firebase to log the user in
+        const userCredential = await auth.signInWithEmailAndPassword(email, pass);
+
+        //clear previous error messages
+        document.getElementById("auth-error").textContent = "";
+
+        //show user credential in the console
+        console.log("Logged In:",userCredential.user.email);
+
+        //Show main UI
+        document.getElementById("auth-container").style.display = "none";
+        document.getElementById("main-site").style.display = "block";
+    }catch(error){
+        // Show error if login fails
+        document.getElementById("auth-error").textContent = error.message;
+    }
+}
 function toggleModal(card=null) {  
     const modal = document.getElementById("modal");
 

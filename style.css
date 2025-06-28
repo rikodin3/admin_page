@@ -8,6 +8,25 @@ body {
   font-family: 'Courgette', cursive;
 }
 
+.auth{
+  font-family: monospace;
+  height:100vh;
+  display: flex;
+  flex-direction: column;
+  gap:20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.auth input{
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  outline: none;
+  box-sizing: border-box;
+  width:400px;
+}
 .dashboard-container{
     display: grid;
     grid-template-areas:
