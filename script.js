@@ -30,6 +30,13 @@ async function login(){
         document.getElementById("auth-error").textContent = error.message;
     }
 }
+
+function logout(){
+    document.getElementById("auth-container").style.display = "flex";
+    document.getElementById("main-site").style.display = "none";
+    document.getElementById("password").value = "";
+}
+
 function toggleModal(card=null) {  
     const modal = document.getElementById("modal");
 
